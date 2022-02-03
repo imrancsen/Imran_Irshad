@@ -157,6 +157,21 @@ while ($x <9) {
 	echo "<br>";
 }
 echo "============================================================";       
+
+  /*Use Loops Q7:
+ Create a GitHub repo and enable GitHub pages for the repo. Upload your HTML files (your website that you did with Tommi)  to the repo. Include the link to the repo and your web page in the php file.
+ */
+echo "<br>"."<b>Q7:</b>"."<br>";
+
+echo "<a href=https://github.com/imrancsen/1st_Web_Proj_SC> Imran_Webproj_gitlink</a>"."<br>";
+
+echo "============================================================";
+echo "<br>";
+echo "Thank You."."<br>";
+echo "============================================================";       
+echo "<br>";
+echo "============================================================";       
+
 ?>
 
 </body>
