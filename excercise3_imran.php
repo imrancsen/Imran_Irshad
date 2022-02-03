@@ -9,30 +9,30 @@
 <body>
 
 <?php
-
-/*Use IF else Q1:
-Write a script that gets the current month and prints one of the following responses, depending on whether it's August or not:
-It's August, so it's still holiday.
-Not August, This is Month-name so i don't have any holidays
-You can use date(F) function to get the current month nameString */
-
 echo "<b>Use of: If  Else</b>". "<br>";
-echo "<br>"."<b>Q1:</b>";
+#Use IF else Q1:
+echo "<br>"."<b>Q1.Write a script that gets the current month and prints one of the following responses, depending on whether it's August or not:"."<br>"
+."It's August, so it's still holiday.
+Not August, This is Month-name so i don't have any holidays</b>"."<br>";
+#You can use date(F) function to get the current month nameString 
+
+
+echo "Ans: Response for using current month function is:"."<br>";
 $M = date("F");
 
 if ($M == "August") {
   echo "<br>". "It's August, so it's still holiday.";
 }
 else {
-    echo "<br>"."Not August, this is $M so i don't have any holidays."."<br>";
+    echo "<br>"."Not August, this is $M so I don't have any holidays."."<br>";
 }
-echo "============================================================";
-/*Use IF else Q2:
-Assign color red to a variable name $color and check to print one the following responses using if else statement 
-The color is red. 
-The color is not red.*/
+echo "===========================================================================================";
 
-echo "<br>"."<b>Q2:</b>";
+echo "<br>".'<b>Q2. Assign color red to a variable name $color and check to print one the following responses using if else statement 
+"<br>".The color is red. 
+"<br>".The color is not red.</b>';
+
+echo "<br>"."Ans: Using red as color, response is:";
 $color="red";
 
 if ($color == "red") {
@@ -41,13 +41,12 @@ if ($color == "red") {
   else {
       echo "<br>"."The color is not red"."<br>";
   }
-  echo "============================================================";
+  echo "===========================================================================================";
 
 
-/*Use IF else Q3:
-Write a program to grade students based on their total score for a subject. The grading scheme is: Excellent : >80 ;Great >70 & less than 80;Good >60 & less than 70; Pass >50 & less than 60 & Fail <50 */
+  echo "<br>"."<b>Q3.Write a program to grade students based on their total score for a subject. The grading scheme is: Excellent : >80 ;Great >70 & less than 80;Good >60 & less than 70; Pass >50 & less than 60 & Fail <50</b>";
 
-echo "<br>"."<b>Q3:</b>";
+echo "<br>"."Ans:";
 ?>
 
 <form>  
@@ -78,11 +77,11 @@ elseif($number1>=50 && $number1<60) {
 else
     echo "<br>"."Grade is " .$number1." and you are fail."."<br>";
        
-    echo "============================================================";
-    /*Use IF else Q4:
-Write a program to get inputs (age and name) from the user and based on their age, decide if he/she is eligible for voting. (18 or more than 18 years is eligible for voting.) */
+    echo "===========================================================================================";
 
-echo "<br>"."<b>Q4:</b>";
+echo "<br>"."<b>Q4.Write a program to get inputs (age and name) from the user and based on their age, decide if he/she is eligible for voting. (18 or more than 18 years is eligible for voting.)</b>";
+
+echo "<br>"."Ans:";
 ?>
 
 <form>
@@ -100,26 +99,27 @@ echo "<br>"."<b>Q4:</b>";
 @$user=$_GET['user'];   
 
 if($age>=18) {      
-  echo "<br>"."Age of ". $user. " is ".$age.", and eligile for voting."."<br>";
+  echo "<br>"."Age of ". $user. " is ".$age.", and he/she is eligile for voting."."<br>";
 }      
 
 else
-echo "<br>"."Age of ". $user. " is ".$age.", and is not eligile for voting."."<br>";
-echo "============================================================";       
-  /*Use Loops Q5:
-Use a looping statement to construct the following pattern:
-12345678
+echo "<br>"."Age of ". $user. " is ".$age.", and he/she is not eligile for voting."."<br>";
+echo "===========================================================================================";
+echo "<br>"."<b>use of LOOPS:</b>"."<br>";
+echo "<br>"."<b>Q5
+Use a looping statement to construct the following pattern:</b>";
+/*12345678
 1234567
 123456
 12345
 1234
 123
 12
-1
- */
+1*/
+ 
 
-echo "<br>"."<b>use of LOOPS:</b>"."<br>";
- echo "<br>"."<b>Q5:</b>"."<br>";
+
+ echo "<br>"."<b>Ans:</b>"."<br>";
  $x=8;
  while($x>0)
  {
@@ -133,9 +133,10 @@ echo "<br>"."<b>use of LOOPS:</b>"."<br>";
      $x--;
  }
  
-echo "============================================================";       
-  /*Use Loops Q6:
- Use While loop to print the following pattern:
+ echo "===========================================================================================";
+ echo "<br>"."<b>Q6:
+ Use While loop to print the following pattern:</b>";
+/*
 *
 **
 ***
@@ -145,7 +146,7 @@ echo "============================================================";
 *******
 ********
  */
-echo "<br>"."<b>Q6:</b>"."<br>";
+echo "<br>"."<b>Ans:</b>"."<br>";
 $x=1;
 while ($x <9) {
 	$y=1;
@@ -156,21 +157,20 @@ while ($x <9) {
 	$x++;
 	echo "<br>";
 }
-echo "============================================================";       
+echo "===========================================================================================";
 
-  /*Use Loops Q7:
- Create a GitHub repo and enable GitHub pages for the repo. Upload your HTML files (your website that you did with Tommi)  to the repo. Include the link to the repo and your web page in the php file.
- */
-echo "<br>"."<b>Q7:</b>"."<br>";
+echo "<br>"."<b>Q7:
+ Create a GitHub repo and enable GitHub pages for the repo. Upload your HTML files (your website that you did with Tommi)  to the repo. Include the link to the repo and your web page in the php file.</b>";
+echo "<br>"."<b>link is:</b>"."<br>";
 
 echo "<a href=https://github.com/imrancsen/1st_Web_Proj_SC> Imran_Webproj_gitlink</a>"."<br>";
 
-echo "============================================================";
+echo "===========================================================================================";
 echo "<br>";
 echo "Thank You."."<br>";
-echo "============================================================";       
+echo "===========================================================================================";
 echo "<br>";
-echo "============================================================";       
+echo "===========================================================================================";
 
 ?>
 
