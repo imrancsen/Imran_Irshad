@@ -3,6 +3,12 @@
 1. Write a php script to display courses as list. Use <li>
 $courses=array("PHP", "HTML", "JavaScript", "CMS", "Project")
 */
+echo "<b>Q1: Courses as list:</b>". "<br>";
+$courses=array("PHP", "HTML", "JavaScript", "CMS", "Project");
+for ($x=0; $x< count($courses); $x++){
+    echo "<li>$courses[$x]</li>";
+    // echo "<br>";
+}
 
 
 
