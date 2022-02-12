@@ -9,11 +9,7 @@ for ($x=0; $x< count($courses); $x++){
     echo "<li>$courses[$x]</li>";
     // echo "<br>";
 }
-
-
-
-
-
+echo "<br>===========================================================================================<br>";
 /* 2. The unset() function is used to remove element from the array.
 The var_dump() function is used to dump information about a variable. 
 array_values() is an inbuilt function that 
@@ -21,8 +17,21 @@ returns all the values of an array and not the keys.
 Delete an element from the array below:
 $courses1=array("PHP", "HTML", "JavaScript", "CMS", "Project");
 */
+echo "<b>Q2: Deleting an element from array using built-in function:</b>". "<br>";
+echo str_repeat('&nbsp;', 7); echo 'The first element of the following array will be deleted using "Unset()" function:<br>';
+echo str_repeat('&nbsp;', 7); echo '$courses1=array("PHP", "HTML", "JavaScript", "CMS", "Project")<br>';
+$courses1=array("PHP", "HTML", "JavaScript", "CMS", "Project");
+unset($courses1[0]);
 
-
+echo "<br>";
+echo str_repeat('&nbsp;', 7); 
+echo "<b>After using function and deletion the array becomes:</b><br>";
+echo str_repeat('&nbsp;', 7); 
+foreach($courses1 as $course1){
+echo $course1;
+echo ", ";
+}
+echo "<br>===========================================================================================<br>";
 
 
 /* 
@@ -33,6 +42,17 @@ b) ascending order sort by Key
 c) descending order sort by Value
 d) descending order sort by Key
 */
+echo "<b>Q3: Sorting arrays:</b>". "<br>";
+$courses3=array("PHP", "HTML", "JavaScript", "CMS", "Project");
+echo str_repeat('&nbsp;', 7); 
+echo "Array to be sorted: ";
+foreach($courses3 as $array3){
+    echo "$array3".", ";
+    }
+echo "<br>";
+echo str_repeat('&nbsp;', 7); 
+
+echo "Considering arrays as 'associative arrays and using asort() and arsort for a function";
 
 
 
