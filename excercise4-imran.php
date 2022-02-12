@@ -204,13 +204,30 @@ Recorded temperatures : 78, 60, 62, 68, 71, 68, 73,
  74, 62, 62, 65, 64, 68, 73, 75, 79, 73
 Write comments to explain the following code (when asked):
 */
-echo "<hr><h2> Calculation average temperature: </h2>";
+echo "<h2> Q8.Calculation average temperature: </h2>";
 $month_temp = "78, 60, 62, 68, 71, 68, 73, 85, 66, 64, 76, 63, 81, 76, 73,
 68, 72, 73, 75, 65, 74, 63, 67, 65, 64, 68, 73, 75, 79, 73";
+echo "<br>-----------------------------------------------------------------------<br>";
+
 // what is explode and what does the below code do? : 
+echo "<b>=> What is explode and what does the below code do?<br></b>";
+echo '$temp_array = explode(',', $month_temp);'.'<br>'.'
+$tot_temp = 0;';
 $temp_array = explode(',', $month_temp);
 $tot_temp = 0;
+echo "<br> <li> <b><u>Explode:</b></u> is a built-in PHP function, and it splits a string into an array.</li>";
+echo "<li>In this code, it breaks the string contained in vairable ".'$month_temp.'." In syntax, comma '<b> , </b>' is used as separator here.<br></li>";
+echo "<li>Another variable ".'$tot_temp'." is initiated in the above code</li>";
+
+echo "<br>-----------------------------------------------------------------------<br>";
+
 // What is count?
+echo "<b>=> What is count?<br></b>";
+echo "<li>Count is a built-in function in PHP which is used to get the total number of elements in an array.</li>";
+echo "<li>The code given in this question shows the use of 'Count function'. In the code, count is used to get the total number of"."<br>".
+" elements in the array and then further used in the formula to calculate the Average Temperature as shown below:</li>";
+
+
 $temp_array_length = count($temp_array);
 foreach($temp_array as $temp)
 {
@@ -219,17 +236,31 @@ foreach($temp_array as $temp)
  $avg_high_temp = $tot_temp/$temp_array_length;
  echo "Average Temperature is : ".$avg_high_temp."
 "; 
+echo "<br>-----------------------------------------------------------------------<br>";
+
 // what does sort do?
+echo "<b>=> What does sort do?<br></b>";
+echo "<li>Sorts functions are used in PHP to sort elements of array in different orders i.e. ascending or descending etc.</li>";
+echo "<li>The code given in this question shows the use of 'sort function'. First of all array was sorted. Then using loop first five<br> value was printed to the screen showing lowest five temperatures.</li>";
 sort($temp_array);
-echo "<br> List of five lowest temperatures :";
+echo "List of five lowest temperatures :";
 for ($i=0; $i< 5; $i++)
 { 
 echo $temp_array[$i].", ";
 }
-echo "<br>List of five highest temperatures :";
+echo "<br>-----------------------------------------------------------------------<br>";
+
 // explain the following loop
+echo "<b>=> explanation of loop:<br></b>";
+echo "<li>In this loop, the initial counter".'($i)'."of the loop is set to be 5 less than array length. Then the test counter is set to be the 'array length'.<br>
+So the loop will run for five times, starting from five less than the array length and alongwith that these last five numbers <br>are used as array index to print the corresponding values to the screen.<br>
+Resultantly, loop will print the five highest temperatures from the array as it is already sorted.</li>";
+
+echo "List of five highest temperatures :";
 for ($i=($temp_array_length-5); $i< ($temp_array_length); $i++)
 {
 echo $temp_array[$i].", ";
 }
+echo "<br>-----------------------------------------------------------------------";
+echo "<br>===========================================================================================<br>";
 ?>
