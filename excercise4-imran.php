@@ -1,4 +1,5 @@
 <?php
+echo "<br>====================================<b><>Arrays-Ex4<></b>==========================================<br>";
 /*
 1. Write a php script to display courses as list. Use <li>
 $courses=array("PHP", "HTML", "JavaScript", "CMS", "Project")
@@ -49,10 +50,82 @@ echo "Array to be sorted: ";
 foreach($courses3 as $array3){
     echo "$array3".", ";
     }
+// a) ascending order sort by value"<br>";
 echo "<br>";
 echo str_repeat('&nbsp;', 7); 
+echo "a) ascending order sort by value, using 'asort( )' method:<br>";
+echo str_repeat('&nbsp;', 14); 
+echo "<b>1.Printing array using foreach loop method:</b><br>";
+echo str_repeat('&nbsp;', 21); 
+asort($courses3);
+foreach($courses3 as $array3){
+    echo "$array3".", ";
+    }
+echo "<br>";
+echo "<br>";
+echo str_repeat('&nbsp;', 14); 
+echo "<b>2.Printing array using print_r method:</b><br>";
+echo str_repeat('&nbsp;', 21); 
+print_r($courses3);
+// b)ascending order sort by key"<br>";
+echo "<br>";
+echo "<br>";
+echo str_repeat('&nbsp;', 7); 
+echo "b) ascending order sort by key, using 'ksort()' method:<br>";
+echo str_repeat('&nbsp;', 14); 
+echo "<b>1.Printing array using foreach loop method:</b><br>";
+echo str_repeat('&nbsp;', 21); 
+ksort($courses3);
+foreach($courses3 as $array4){
+    echo "$array4".", ";
+    }
+echo "<br>";
+echo "<br>";
+echo str_repeat('&nbsp;', 14); 
+echo "<b>2.Printing array using print_r method:</b><br>";
+echo str_repeat('&nbsp;', 21); 
+print_r($courses3);
 
-echo "Considering arrays as 'associative arrays and using asort() and arsort for a function";
+
+// c) descending order sort by Value
+echo "<br>";
+echo "<br>";
+echo str_repeat('&nbsp;', 7); 
+echo "c) descending order sort by value, using 'arsort()' method:<br>";
+echo str_repeat('&nbsp;', 14); 
+echo "<b>1.Printing array using foreach loop method:</b><br>";
+echo str_repeat('&nbsp;', 21); 
+arsort($courses3);
+foreach($courses3 as $array5){
+    echo "$array5".", ";
+    }
+echo "<br>";
+echo "<br>";
+echo str_repeat('&nbsp;', 14); 
+echo "<b>2.Printing array using print_r method:</b><br>";
+echo str_repeat('&nbsp;', 21); 
+print_r($courses3);
+
+// d) descending order sort by Key
+echo "<br>";
+echo "<br>";
+echo str_repeat('&nbsp;', 7); 
+echo "d) descending order sort by key, using 'krsort()' method:<br>";
+echo str_repeat('&nbsp;', 14); 
+echo "<b>1.Printing array using foreach loop method:</b><br>";
+echo str_repeat('&nbsp;', 21); 
+krsort($courses3);
+foreach($courses3 as $array6){
+    echo "$array6".", ";
+    }
+echo "<br>";
+echo "<br>";
+echo str_repeat('&nbsp;', 14); 
+echo "<b>2.Printing array using print_r method:</b><br>";
+echo str_repeat('&nbsp;', 21); 
+print_r($courses3);
+
+echo "<br>===========================================================================================<br>";
 
 
 
@@ -63,24 +136,64 @@ echo "Considering arrays as 'associative arrays and using asort() and arsort for
  $courses4=array("php", "html", "javascript", "cms", "project");
 */
 
+echo "<b>Q4: Changing values of arrays to upper case:</b>". "<br>";
+echo str_repeat('&nbsp;', 7);
+echo ' Array to change the case: $courses4=array("php", "html", "javascript", "cms", "project")<br>';
+echo str_repeat('&nbsp;', 7);
 
+$courses4=array("php", "html", "javascript", "cms", "project");
+// using array_flip to gain key => values
+$courses4=array_flip($courses4);    
+$courses4=array_change_key_case($courses4,CASE_UPPER);
+//  again using flip to regain strings as value
+$courses4=array_flip($courses4);
+echo "Array in uppercase: ";
+foreach($courses4 as $courseuppercase){
+    echo "$courseuppercase".", ";
+}
 
-
+echo "<br>===========================================================================================<br>";
 
 
 // 5. Create an array that holds your favorite colors and print them. (indexed arrays)
 
+echo "<b>Q5: Printing favourite colors from an array</b>". "<br>";
+echo str_repeat('&nbsp;', 7);
+$myfavcolors = array("white", "green", "olive green");
+echo "My favourite colours are ". $myfavcolors[0] . ", " . $myfavcolors[1] . " and " . $myfavcolors[2] . ".";
 
 
+echo "<br>===========================================================================================<br>";
 
 // 6. List all your favorite colors and their hexadecimal equivalents. (associative arrays)
+echo "<b>Q6: Favourite colors and their hexadecimal equivalents (assosiative arrays):</b>". "<br>";
 
+$myfavcolors = array("white"=>"#FFFFFF", "green"=>"#008000", "olive green"=>"#b5b35c");
+echo str_repeat('&nbsp;', 7);
+foreach($myfavcolors as  $key => $value){
+    
+    echo "<li>";
+    
+    echo "My favourite colour is ". $key.  " and its hexa value is " . $value . ".";
+    echo "<br>";
+    echo "</li>";
+}
 
-
+echo "<br>===========================================================================================<br>";
 
 // 7. Include 12 months in an array named month and print them using loop statement.
+echo "<b>Q7: Including 12 months in an array and printing using loop statement:</b>". "<br>";
 
+  
+$months =array("Jan","Feb","March","April","May","June","July","August","Sep","Oct","Nov","Dec");
+  
+foreach($months as $month){
+    
+    echo str_repeat('&nbsp;', 7). "$month";
+    
+}
 
+echo "<br>===========================================================================================<br>";
 
 
 /*
