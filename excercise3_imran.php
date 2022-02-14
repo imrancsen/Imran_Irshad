@@ -94,7 +94,7 @@ echo "<br>"."Ans:";
 </form>  
 
 <?php
-
+if (isset($_POST["submit"])) {
 @$age=$_GET['age'];   
 @$user=$_GET['user'];   
 
@@ -102,8 +102,11 @@ if($age>=18) {
   echo "<br>"."Age of ". $user. " is ".$age.", and he/she is eligile for voting."."<br>";
 }      
 
-else
+else {
 echo "<br>"."Age of ". $user. " is ".$age.", and he/she is not eligile for voting."."<br>";
+}
+}
+
 echo "===========================================================================================";
 echo "<br>"."<b>use of LOOPS:</b>"."<br>";
 echo "<br>"."<b>Q5
@@ -163,7 +166,7 @@ echo "<br>"."<b>Q7:
  Create a GitHub repo and enable GitHub pages for the repo. Upload your HTML files (your website that you did with Tommi)  to the repo. Include the link to the repo and your web page in the php file.</b>";
 echo "<br>"."<b>link is:</b>"."<br>";
 
-echo "<a href=https://github.com/imrancsen/1st_Web_Proj_SC> Imran_Webproj_gitlink</a>"."<br>";
+echo "<a href=https://github.com/imrancsen/Website_with_Tommi> Imran_Webproj_gitlink</a>"."<br>";
 
 echo "===========================================================================================";
 echo "<br>";
