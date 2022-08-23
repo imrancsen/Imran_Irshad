@@ -23,7 +23,7 @@ echo "<br>". "Ans:"."<br>". "first_variable = I am first variable."."<br>"."Seco
 
 echo "<br>"."<b>Q2.In your above code, Change the double quotes to single quotes.Then run the script again. Did it have any effect?</b>";
 
-echo "<br>". "Ans."."<br>". "After changing the double quotes to single quotes in code of above string variables, it is printing as same, no change is observed." . "<br>";
+echo "<br>". "Ans."."<br>". "After changing the double quotes to single quotes in code of above string variables, it is showing output in the same way as it was before, no change is observed." . "<br>";
 
 echo "<br>". "<b>Q3.Put a single quote at the beginning of your text and double quote at the end. What happens now when you run your code?</b>";
 echo "<br>" . "Ans."."<br>"."If a single quote at the begining and double quote at the end is written. It produces the following error:" . "<br>";
